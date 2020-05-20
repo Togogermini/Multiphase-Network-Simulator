@@ -1,0 +1,60 @@
+## IMPEDANCE CALCULATION RELATIONS
+
+### (A) SINGLE PHASE FLOW
+
+##### Deepbed Filtration
+
+
+\begin{equation*}
+\Delta J_d(T) = mT \\
+\label{eq:j_d} \tag{1}
+\end{equation*}
+
+
+\begin{equation*}
+J_d(T) = 1+\Delta J_d(T) \\ 
+     = 1+mT 
+\label{eq:j_d1} \tag{2}
+\end{equation*}
+
+for $0 < T < T_{tr}$, where $T$ is the dimensionless time (in pore volumes injected, $p.v.i$) and $T_{tr}$, the transition time to external cake formation/filtration. The slope, $m$, in equation $\eqref{eq:j_d}$ is given by:
+
+\begin{equation*}
+m = \frac{\beta\phi c_0 (\lambda R_c)^2}{\ln\left(\frac{R_c}{r_w}\right)}\left(\frac{1}{\lambda r_w}+e
+^{\lambda r_w}expi(\lambda r_w)\right)
+\label{eq:j_d2} \tag{3}
+\end{equation*}
+
+where $r_w$ is the well radius, $R_c$ the reservoir drainage radius, $\lambda$ the filtration coefficient, and $\beta$ the damage coefficient. $expi(x)$ is the exponential integral:
+
+\begin{equation*}
+expi(x) = \int_x^\infty\frac{e^{-y}}{y}dy
+\label{eq:j_d3} \tag{4}
+\end{equation*}
+
+The transition time is computed from:
+
+\begin{equation*}
+T_{tr} = \frac{2\alpha r_w}{\lambda R_c^2c_0}
+\label{eq:j_d4} \tag{5}
+\end{equation*}
+=============================================================================
+
+
+### APPENDIX
+
+### A-1: Dimensionless variables
+
+$\rho = \frac{r^2}{R_c^2}$
+
+$T = \frac{1}{\phi\pi R_c^2}\int_0^tq(t)dt$
+
+$x = \rho^2$
+
+$x_w = \frac{r_w^2}{R_c^2}$
+
+$C = \frac{c}{c^0}$ 
+
+$S = \frac{\sigma}{\phi c^0}$ 
+
+$P = \frac{2\pi k_0k_{rwor}p}{\mu q}$ 
